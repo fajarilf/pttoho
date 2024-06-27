@@ -12,11 +12,11 @@ class MqttController
 
     public function __construct()
     {
-        $this->mqttRespository = new MqttRespository(Database::getConnection(), Mqtt::getConnection());
+        $this->mqttRespository = new MqttRespository(Database::getConnection());
     }
 
-    public function run()
-    {
-        $this->mqttRespository->save();
-    }
+    // public function run()
+    // {
+    //     $this->mqttRespository->save();
+    // }
 }

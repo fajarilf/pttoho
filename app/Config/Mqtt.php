@@ -20,7 +20,7 @@ class Mqtt
             ->setPassword($config["mqtt"][$env]["password"])
             ->setKeepAliveInterval(60)
             ->setLastWillMessage("client disconnect")
-            ->setLastWillQualityOfService(0)
+            ->setLastWillQualityOfService(2)
         ;
 
         self::$client = new MqttClient(
@@ -30,6 +30,8 @@ class Mqtt
         );
 
         self::$client->connect($connectionSettings);
+
+        echo "client connect" . PHP_EOL;
 
         return self::$client;
     }

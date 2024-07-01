@@ -1,0 +1,18 @@
+{
+    "name": "fajar-ilham/mqtt",
+    "description": "mqtt connection",
+    "authors": [
+        {
+            "name": "fajarilf",
+            "email": "fjr.ilf.firmansyah@gmail.com"
+        }
+    ],
+    "require": {
+        "php-mqtt/client" :"^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "fajarilham\\": "app"
+        }
+    }
+}

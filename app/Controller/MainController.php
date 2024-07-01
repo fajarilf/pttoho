@@ -5,7 +5,6 @@ namespace fajarilham\Controller;
 use fajarilham\App\View;
 use fajarilham\Repository\MqttRespository;
 use fajarilham\Config\Database;
-use fajarilham\Config\Mqtt;
 
 class MainController
 {
